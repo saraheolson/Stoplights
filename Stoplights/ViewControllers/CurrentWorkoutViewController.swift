@@ -1,15 +1,15 @@
 //
-//  ViewController.swift
+//  CurrentWorkoutViewController.swift
 //  Stoplights
 //
-//  Created by Floater on 9/9/16.
+//  Created by SarahEOlson on 9/9/16.
 //  Copyright © 2016 SarahEOlson. All rights reserved.
 //
 
 import UIKit
 import HealthKit
 
-class ViewController: UIViewController {
+class CurrentWorkoutViewController: UIViewController {
 
     @IBOutlet var heartRateLabel: UILabel!
     
@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         }
 
         HealthManager.sharedInstance.heartRateDelegate = self
+        HealthManager.sharedInstance.workoutDelegate = self
         
 //        #if (TARGET_OS_SIMULATOR)
             HealthManager.sharedInstance.createMockData()
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
         HealthManager.sharedInstance.retrieveHeartRate()
     }
 }
-extension ViewController: HeartRateDelegate {
+extension CurrentWorkoutViewController: HeartRateDelegate {
     
     func didReceiveNewHeartRate(heartRate: HKQuantitySample) {
         
@@ -40,5 +41,13 @@ extension ViewController: HeartRateDelegate {
             let theValue = heartRate.quantity.doubleValue(for: HKUnit(from: "count/min"))
             self.heartRateLabel.text = "\(Int(theValue))"
         }
+    }
+}
+
+extension CurrentWorkoutViewController: WorkoutDelegate {
+    
+    func didReceiveNewWorkout(workout: HKWorkout) {
+        let workoutEvents = workout.workoutEvents
+        
     }
 }

@@ -13,6 +13,10 @@ protocol HeartRateDelegate {
     func didReceiveNewHeartRate(heartRate: HKQuantitySample)
 }
 
+protocol WorkoutDelegate {
+    func didReceiveNewWorkout(workout: HKWorkout)
+}
+
 /**
  *  Interface for retrieving and saving health data.
  */
@@ -37,7 +41,9 @@ class HealthManager {
     let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate)
     
     var isAuthorized = false
+    
     var heartRateDelegate: HeartRateDelegate?
+    var workoutDelegate: WorkoutDelegate?
     
     func authorizeHealthKit(completion: ((_ wasSuccessful: Bool, _ wasError: NSError?) -> Void)!) {
         
@@ -52,9 +58,10 @@ class HealthManager {
             healthKitTypesToWrite = [workoutType]
         }
         
-        healthStore?.requestAuthorization(toShare: healthKitTypesToWrite, read: healthKitTypesToRead, completion: { (success, error) in
+        healthStore?.requestAuthorization(toShare: healthKitTypesToWrite, read: healthKitTypesToRead, completion: { [weak self] (success, error) in
             
             if success {
+                self?.isAuthorized = true
                 print("SUCCESS")
             } else {
                 print(error?.localizedDescription)
