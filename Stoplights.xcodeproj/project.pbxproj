@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21BF3F8D1D83708A0065010E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BF3F8C1D83708A0065010E /* AppDelegate.swift */; };
+		21BF3F8F1D83708A0065010E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BF3F8E1D83708A0065010E /* ViewController.swift */; };
+		21BF3F921D83708A0065010E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BF3F901D83708A0065010E /* Main.storyboard */; };
+		21BF3F941D83708A0065010E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21BF3F931D83708A0065010E /* Assets.xcassets */; };
+		21BF3F971D83708A0065010E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BF3F951D83708A0065010E /* LaunchScreen.storyboard */; };
+		21BF3FA21D83708A0065010E /* StoplightsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BF3FA11D83708A0065010E /* StoplightsTests.swift */; };
+		21BF3FAD1D83708A0065010E /* StoplightsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BF3FAC1D83708A0065010E /* StoplightsUITests.swift */; };
+		21BF3FB21D83708A0065010E /* Stoplights WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 21BF3FB11D83708A0065010E /* Stoplights WatchKit App.app */; };
+		21BF3FB81D83708A0065010E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BF3FB61D83708A0065010E /* Interface.storyboard */; };
+		21BF3FBA1D83708A0065010E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21BF3FB91D83708A0065010E /* Assets.xcassets */; };
+		21BF3FC11D83708A0065010E /* Stoplights WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21BF3FC01D83708A0065010E /* Stoplights WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		21BF3FC81D83708A0065010E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BF3FC71D83708A0065010E /* InterfaceController.swift */; };
+		21BF3FCA1D83708A0065010E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BF3FC91D83708A0065010E /* ExtensionDelegate.swift */; };
+		21BF3FCC1D83708A0065010E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BF3FCB1D83708A0065010E /* NotificationController.swift */; };
+		21BF3FCE1D83708A0065010E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21BF3FCD1D83708A0065010E /* Assets.xcassets */; };
+		21DBBEC91D97227B00926C2A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21DBBEC81D97227B00926C2A /* HealthKit.framework */; };
+		21DBBECC1D97229E00926C2A /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DBBECB1D97229E00926C2A /* HealthManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21BF3F9E1D83708A0065010E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21BF3F811D8370890065010E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21BF3F881D8370890065010E;
+			remoteInfo = Stoplights;
+		};
+		21BF3FA91D83708A0065010E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21BF3F811D8370890065010E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21BF3F881D8370890065010E;
+			remoteInfo = Stoplights;
+		};
+		21BF3FB31D83708A0065010E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21BF3F811D8370890065010E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21BF3FB01D83708A0065010E;
+			remoteInfo = "Stoplights WatchKit App";
+		};
+		21BF3FC21D83708A0065010E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21BF3F811D8370890065010E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21BF3FBF1D83708A0065010E;
+			remoteInfo = "Stoplights WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		21BF3FD51D83708A0065010E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				21BF3FC11D83708A0065010E /* Stoplights WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BF3FD91D83708A0065010E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				21BF3FB21D83708A0065010E /* Stoplights WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		21BF3F891D83708A0065010E /* Stoplights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stoplights.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21BF3F8C1D83708A0065010E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21BF3F8E1D83708A0065010E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21BF3F911D83708A0065010E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21BF3F931D83708A0065010E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21BF3F961D83708A0065010E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21BF3F981D83708A0065010E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BF3F9D1D83708A0065010E /* StoplightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoplightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21BF3FA11D83708A0065010E /* StoplightsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoplightsTests.swift; sourceTree = "<group>"; };
+		21BF3FA31D83708A0065010E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BF3FA81D83708A0065010E /* StoplightsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoplightsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21BF3FAC1D83708A0065010E /* StoplightsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoplightsUITests.swift; sourceTree = "<group>"; };
+		21BF3FAE1D83708A0065010E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BF3FB11D83708A0065010E /* Stoplights WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stoplights WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21BF3FB71D83708A0065010E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		21BF3FB91D83708A0065010E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21BF3FBB1D83708A0065010E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BF3FC01D83708A0065010E /* Stoplights WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Stoplights WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21BF3FC61D83708A0065010E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		21BF3FC71D83708A0065010E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		21BF3FC91D83708A0065010E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		21BF3FCB1D83708A0065010E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		21BF3FCD1D83708A0065010E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21BF3FCF1D83708A0065010E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21DBBEC81D97227B00926C2A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		21DBBECA1D97227B00926C2A /* Stoplights.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stoplights.entitlements; sourceTree = "<group>"; };
+		21DBBECB1D97229E00926C2A /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21BF3F861D8370890065010E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21DBBEC91D97227B00926C2A /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BF3F9A1D83708A0065010E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BF3FA51D83708A0065010E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BF3FBD1D83708A0065010E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21BF3F801D8370890065010E = {
+			isa = PBXGroup;
+			children = (
+				21BF3F8B1D83708A0065010E /* Stoplights */,
+				21BF3FA01D83708A0065010E /* StoplightsTests */,
+				21BF3FAB1D83708A0065010E /* StoplightsUITests */,
+				21BF3FB51D83708A0065010E /* Stoplights WatchKit App */,
+				21BF3FC41D83708A0065010E /* Stoplights WatchKit Extension */,
+				21BF3F8A1D83708A0065010E /* Products */,
+				21DBBEC71D97227B00926C2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		21BF3F8A1D83708A0065010E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21BF3F891D83708A0065010E /* Stoplights.app */,
+				21BF3F9D1D83708A0065010E /* StoplightsTests.xctest */,
+				21BF3FA81D83708A0065010E /* StoplightsUITests.xctest */,
+				21BF3FB11D83708A0065010E /* Stoplights WatchKit App.app */,
+				21BF3FC01D83708A0065010E /* Stoplights WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21BF3F8B1D83708A0065010E /* Stoplights */ = {
+			isa = PBXGroup;
+			children = (
+				21DBBECA1D97227B00926C2A /* Stoplights.entitlements */,
+				21BF3F8C1D83708A0065010E /* AppDelegate.swift */,
+				21BF3F8E1D83708A0065010E /* ViewController.swift */,
+				21BF3F901D83708A0065010E /* Main.storyboard */,
+				21BF3F931D83708A0065010E /* Assets.xcassets */,
+				21BF3F951D83708A0065010E /* LaunchScreen.storyboard */,
+				21BF3F981D83708A0065010E /* Info.plist */,
+				21DBBECB1D97229E00926C2A /* HealthManager.swift */,
+			);
+			path = Stoplights;
+			sourceTree = "<group>";
+		};
+		21BF3FA01D83708A0065010E /* StoplightsTests */ = {
+			isa = PBXGroup;
+			children = (
+				21BF3FA11D83708A0065010E /* StoplightsTests.swift */,
+				21BF3FA31D83708A0065010E /* Info.plist */,
+			);
+			path = StoplightsTests;
+			sourceTree = "<group>";
+		};
+		21BF3FAB1D83708A0065010E /* StoplightsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21BF3FAC1D83708A0065010E /* StoplightsUITests.swift */,
+				21BF3FAE1D83708A0065010E /* Info.plist */,
+			);
+			path = StoplightsUITests;
+			sourceTree = "<group>";
+		};
+		21BF3FB51D83708A0065010E /* Stoplights WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				21BF3FB61D83708A0065010E /* Interface.storyboard */,
+				21BF3FB91D83708A0065010E /* Assets.xcassets */,
+				21BF3FBB1D83708A0065010E /* Info.plist */,
+			);
+			path = "Stoplights WatchKit App";
+			sourceTree = "<group>";
+		};
+		21BF3FC41D83708A0065010E /* Stoplights WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				21BF3FC71D83708A0065010E /* InterfaceController.swift */,
+				21BF3FC91D83708A0065010E /* ExtensionDelegate.swift */,
+				21BF3FCB1D83708A0065010E /* NotificationController.swift */,
+				21BF3FCD1D83708A0065010E /* Assets.xcassets */,
+				21BF3FCF1D83708A0065010E /* Info.plist */,
+				21BF3FC51D83708A0065010E /* Supporting Files */,
+			);
+			path = "Stoplights WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		21BF3FC51D83708A0065010E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21BF3FC61D83708A0065010E /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21DBBEC71D97227B00926C2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21DBBEC81D97227B00926C2A /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21BF3F881D8370890065010E /* Stoplights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21BF3FDA1D83708A0065010E /* Build configuration list for PBXNativeTarget "Stoplights" */;
+			buildPhases = (
+				21BF3F851D8370890065010E /* Sources */,
+				21BF3F861D8370890065010E /* Frameworks */,
+				21BF3F871D8370890065010E /* Resources */,
+				21BF3FD91D83708A0065010E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21BF3FB41D83708A0065010E /* PBXTargetDependency */,
+			);
+			name = Stoplights;
+			productName = Stoplights;
+			productReference = 21BF3F891D83708A0065010E /* Stoplights.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21BF3F9C1D83708A0065010E /* StoplightsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21BF3FDD1D83708A0065010E /* Build configuration list for PBXNativeTarget "StoplightsTests" */;
+			buildPhases = (
+				21BF3F991D83708A0065010E /* Sources */,
+				21BF3F9A1D83708A0065010E /* Frameworks */,
+				21BF3F9B1D83708A0065010E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21BF3F9F1D83708A0065010E /* PBXTargetDependency */,
+			);
+			name = StoplightsTests;
+			productName = StoplightsTests;
+			productReference = 21BF3F9D1D83708A0065010E /* StoplightsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21BF3FA71D83708A0065010E /* StoplightsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21BF3FE01D83708A0065010E /* Build configuration list for PBXNativeTarget "StoplightsUITests" */;
+			buildPhases = (
+				21BF3FA41D83708A0065010E /* Sources */,
+				21BF3FA51D83708A0065010E /* Frameworks */,
+				21BF3FA61D83708A0065010E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21BF3FAA1D83708A0065010E /* PBXTargetDependency */,
+			);
+			name = StoplightsUITests;
+			productName = StoplightsUITests;
+			productReference = 21BF3FA81D83708A0065010E /* StoplightsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		21BF3FB01D83708A0065010E /* Stoplights WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21BF3FD61D83708A0065010E /* Build configuration list for PBXNativeTarget "Stoplights WatchKit App" */;
+			buildPhases = (
+				21BF3FAF1D83708A0065010E /* Resources */,
+				21BF3FD51D83708A0065010E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21BF3FC31D83708A0065010E /* PBXTargetDependency */,
+			);
+			name = "Stoplights WatchKit App";
+			productName = "Stoplights WatchKit App";
+			productReference = 21BF3FB11D83708A0065010E /* Stoplights WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		21BF3FBF1D83708A0065010E /* Stoplights WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21BF3FD21D83708A0065010E /* Build configuration list for PBXNativeTarget "Stoplights WatchKit Extension" */;
+			buildPhases = (
+				21BF3FBC1D83708A0065010E /* Sources */,
+				21BF3FBD1D83708A0065010E /* Frameworks */,
+				21BF3FBE1D83708A0065010E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stoplights WatchKit Extension";
+			productName = "Stoplights WatchKit Extension";
+			productReference = 21BF3FC01D83708A0065010E /* Stoplights WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21BF3F811D8370890065010E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = SarahEOlson;
+				TargetAttributes = {
+					21BF3F881D8370890065010E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4SR4ST5E9E;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					21BF3F9C1D83708A0065010E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4SR4ST5E9E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 21BF3F881D8370890065010E;
+					};
+					21BF3FA71D83708A0065010E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4SR4ST5E9E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 21BF3F881D8370890065010E;
+					};
+					21BF3FB01D83708A0065010E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4SR4ST5E9E;
+						ProvisioningStyle = Automatic;
+					};
+					21BF3FBF1D83708A0065010E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4SR4ST5E9E;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 21BF3F841D8370890065010E /* Build configuration list for PBXProject "Stoplights" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21BF3F801D8370890065010E;
+			productRefGroup = 21BF3F8A1D83708A0065010E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21BF3F881D8370890065010E /* Stoplights */,
+				21BF3F9C1D83708A0065010E /* StoplightsTests */,
+				21BF3FA71D83708A0065010E /* StoplightsUITests */,
+				21BF3FB01D83708A0065010E /* Stoplights WatchKit App */,
+				21BF3FBF1D83708A0065010E /* Stoplights WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21BF3F871D8370890065010E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BF3F971D83708A0065010E /* LaunchScreen.storyboard in Resources */,
+				21BF3F941D83708A0065010E /* Assets.xcassets in Resources */,
+				21BF3F921D83708A0065010E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BF3F9B1D83708A0065010E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BF3FA61D83708A0065010E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BF3FAF1D83708A0065010E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BF3FBA1D83708A0065010E /* Assets.xcassets in Resources */,
+				21BF3FB81D83708A0065010E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BF3FBE1D83708A0065010E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BF3FCE1D83708A0065010E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21BF3F851D8370890065010E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BF3F8F1D83708A0065010E /* ViewController.swift in Sources */,
+				21DBBECC1D97229E00926C2A /* HealthManager.swift in Sources */,
+				21BF3F8D1D83708A0065010E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BF3F991D83708A0065010E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BF3FA21D83708A0065010E /* StoplightsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BF3FA41D83708A0065010E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BF3FAD1D83708A0065010E /* StoplightsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BF3FBC1D83708A0065010E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BF3FCC1D83708A0065010E /* NotificationController.swift in Sources */,
+				21BF3FCA1D83708A0065010E /* ExtensionDelegate.swift in Sources */,
+				21BF3FC81D83708A0065010E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21BF3F9F1D83708A0065010E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21BF3F881D8370890065010E /* Stoplights */;
+			targetProxy = 21BF3F9E1D83708A0065010E /* PBXContainerItemProxy */;
+		};
+		21BF3FAA1D83708A0065010E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21BF3F881D8370890065010E /* Stoplights */;
+			targetProxy = 21BF3FA91D83708A0065010E /* PBXContainerItemProxy */;
+		};
+		21BF3FB41D83708A0065010E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21BF3FB01D83708A0065010E /* Stoplights WatchKit App */;
+			targetProxy = 21BF3FB31D83708A0065010E /* PBXContainerItemProxy */;
+		};
+		21BF3FC31D83708A0065010E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21BF3FBF1D83708A0065010E /* Stoplights WatchKit Extension */;
+			targetProxy = 21BF3FC21D83708A0065010E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21BF3F901D83708A0065010E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21BF3F911D83708A0065010E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21BF3F951D83708A0065010E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21BF3F961D83708A0065010E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		21BF3FB61D83708A0065010E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21BF3FB71D83708A0065010E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21BF3FD01D83708A0065010E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21BF3FD11D83708A0065010E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21BF3FD31D83708A0065010E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 4SR4ST5E9E;
+				INFOPLIST_FILE = "Stoplights WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraheolson.Stoplights.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		21BF3FD41D83708A0065010E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 4SR4ST5E9E;
+				INFOPLIST_FILE = "Stoplights WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraheolson.Stoplights.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		21BF3FD71D83708A0065010E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4SR4ST5E9E;
+				IBSC_MODULE = Stoplights_WatchKit_Extension;
+				INFOPLIST_FILE = "Stoplights WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraheolson.Stoplights.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		21BF3FD81D83708A0065010E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4SR4ST5E9E;
+				IBSC_MODULE = Stoplights_WatchKit_Extension;
+				INFOPLIST_FILE = "Stoplights WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraheolson.Stoplights.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		21BF3FDB1D83708A0065010E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Stoplights/Stoplights.entitlements;
+				DEVELOPMENT_TEAM = 4SR4ST5E9E;
+				INFOPLIST_FILE = Stoplights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraheolson.Stoplights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		21BF3FDC1D83708A0065010E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Stoplights/Stoplights.entitlements;
+				DEVELOPMENT_TEAM = 4SR4ST5E9E;
+				INFOPLIST_FILE = Stoplights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraheolson.Stoplights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		21BF3FDE1D83708A0065010E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4SR4ST5E9E;
+				INFOPLIST_FILE = StoplightsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraheolson.StoplightsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stoplights.app/Stoplights";
+			};
+			name = Debug;
+		};
+		21BF3FDF1D83708A0065010E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4SR4ST5E9E;
+				INFOPLIST_FILE = StoplightsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraheolson.StoplightsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stoplights.app/Stoplights";
+			};
+			name = Release;
+		};
+		21BF3FE11D83708A0065010E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4SR4ST5E9E;
+				INFOPLIST_FILE = StoplightsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraheolson.StoplightsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Stoplights;
+			};
+			name = Debug;
+		};
+		21BF3FE21D83708A0065010E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4SR4ST5E9E;
+				INFOPLIST_FILE = StoplightsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraheolson.StoplightsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Stoplights;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21BF3F841D8370890065010E /* Build configuration list for PBXProject "Stoplights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21BF3FD01D83708A0065010E /* Debug */,
+				21BF3FD11D83708A0065010E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21BF3FD21D83708A0065010E /* Build configuration list for PBXNativeTarget "Stoplights WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21BF3FD31D83708A0065010E /* Debug */,
+				21BF3FD41D83708A0065010E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21BF3FD61D83708A0065010E /* Build configuration list for PBXNativeTarget "Stoplights WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21BF3FD71D83708A0065010E /* Debug */,
+				21BF3FD81D83708A0065010E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21BF3FDA1D83708A0065010E /* Build configuration list for PBXNativeTarget "Stoplights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21BF3FDB1D83708A0065010E /* Debug */,
+				21BF3FDC1D83708A0065010E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21BF3FDD1D83708A0065010E /* Build configuration list for PBXNativeTarget "StoplightsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21BF3FDE1D83708A0065010E /* Debug */,
+				21BF3FDF1D83708A0065010E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21BF3FE01D83708A0065010E /* Build configuration list for PBXNativeTarget "StoplightsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21BF3FE11D83708A0065010E /* Debug */,
+				21BF3FE21D83708A0065010E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21BF3F811D8370890065010E /* Project object */;
+}
